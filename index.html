@@ -123,11 +123,15 @@ Generate Link
 <style type="text/css">
 input{margin:10px; width:80%}
 </style>
-  Link cần chuyển hướng:
+  Link chuyển hướng:
  <input class="form-control" type="text" id="redirect-link" placeholder="vd: https://facebook.com/ ,...">
 <br \>
   Từ Khóa:
-  <input class="form-control" type="text" id="external-link" placeholder="vd: abc ,...">
+  <input class="form-control" type="text" id="external-link" placeholder="vd: a, b, c ,...">
+<br \>
+  Trang Của Link:
+  <input class="form-control" type="text" id="trang-link" placeholder="vd: Vmoodmanh.Bmacs  ,...">
+   <p>Ví dụ bạn muốn truy cập fb.com/Vmoodmnah.Bmacs/ Trong Phần Link Chuyển Hướng bạn nhập fb.com Từ Khóa bạn nhập bất kì Trang Link bạn nhập Vmoodmanh.Bmacs!</p>
   <button id="generate-link" value="Generate">Generate</button><br \>
   <h3>Output link:</h3>
 <div id="outputlink"></div>
@@ -135,8 +139,9 @@ input{margin:10px; width:80%}
 document.getElementById("generate-link").onclick = function(){
   var redirectlink = document.getElementById("redirect-link").value;
   var externallink = document.getElementById("external-link").value;
+  var tranglink = document.getElementById("trang-link").value;
   var externallink = btoa(encodeURIComponent(externallink));
-  var outputlink = redirectlink + "?external=" + externallink + "#";
+  var outputlink = redirectlink + "?external=" + externallink + "/" + tranglink;
   document.getElementById("outputlink").innerHTML = outputlink;
 }
 </script>
