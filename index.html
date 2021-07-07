@@ -88,7 +88,7 @@ pre>code{border:0;padding-right:0;padding-left:0}
 </head>-->
 
 <body class='index' itemscope='itemscope' itemtype='http://schema.org/WebPage'>
-<header class='site-header' role='banner'><div class='wrapper'><a class='site-title' href='//linkshort.github.io'>Link Shotener</a>
+<header class='site-header' role='banner'><div class='wrapper'><a class='site-title' href='//novastark1245.github.io/LinkShort/'>Link Shotener</a>
 <nav class='site-nav'>
 <input class='nav-trigger' id='nav-trigger' type='checkbox'/>
 <label for='nav-trigger'>
@@ -100,7 +100,7 @@ pre>code{border:0;padding-right:0;padding-left:0}
 </svg>
 </span>
 </label><div class='trigger'>
-<a class='page-link' href='//www.fb.com/Vmoodmanh.Bmacs/'>Face Book</a>
+<a class='page-link' href='//www.fb.com/Vmoodmanh.Bmacs/'>FaceBook</a>
 <a class='page-link' href='//omlet.gg/master_noob_mcpe_vn'>Omlet Arcade</a>
 </nav></div>
 </header>
@@ -124,7 +124,7 @@ Generate Link
 input{margin:10px; width:80%}
 </style>
   Your redirect link:
- <input class="form-control" type="text" id="redirect-link" placeholder="https://www.thichnet.com/p/download.html">
+ <input class="form-control" type="text" id="redirect-link" placeholder="vd: https://facebook.com/ ,...">
 <br \>
   Your external link:
   <input type="text" id="external-link"><br \>
@@ -136,7 +136,7 @@ document.getElementById("generate-link").onclick = function(){
   var redirectlink = document.getElementById("redirect-link").value;
   var externallink = document.getElementById("external-link").value;
   var externallink = btoa(encodeURIComponent(externallink));
-  var outputlink = redirectlink + "?link=" + externallink;
+  var outputlink = redirectlink + "?external=" + externallink + "#";
   document.getElementById("outputlink").innerHTML = outputlink;
 }
 </script>
@@ -151,7 +151,7 @@ document.getElementById("generate-link").onclick = function(){
 "@id":"https://tn-code.blogspot.com/p/generate-link.html"
 },
 "headline": "Generate Link",
-"description": "   Your redirect link:      Your external link:      Generate    Output link:   ",
+"description": "   Link Website:      Kí Tự Tùy Chọn:      Generate    Link Rút Gọn:   ",
 "image": {
 "@type": "ImageObject",
 "url": "<!--Can't find substitution for tag [post.thumbnailUrl]-->",
